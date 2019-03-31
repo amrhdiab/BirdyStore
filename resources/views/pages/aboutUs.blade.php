@@ -23,7 +23,7 @@
                             "loop": true,
                             "autoplay": true,
                             "muted": true,
-                            "mp4":"{{asset('app/videos/Logo Intro 7.mp4')}}",
+                            "mp4":"{{asset('storage/slides/logo-intro.mp4')}}",
                             "video_ratio": "1.7778"
                             }'>
                     </div>
