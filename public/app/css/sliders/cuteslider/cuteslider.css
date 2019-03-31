@@ -1,0 +1,340 @@
+#slideshow .container {padding-bottom:35px;}
+.cs-kallyas {position: relative; width:100%; margin:0 auto;}
+
+.cute-slider{ position: relative; z-index: 1;}
+.cute-slider img { max-width:none; vertical-align:baseline;}
+
+.cute-ie8 * {filter: inherit; opacity: inherit;}
+
+
+
+/* -------------------------------------
+ * Slider Controls
+ * ------------------------------------*/
+
+.br-controls {
+	position:absolute;
+	z-index: 10;
+	background-image: url("../cuteslider/images/trans.png");
+}
+.br-next,
+.br-previous {	position:absolute; width: 30px; height: 40px; right: 20px; bottom: 20px; background-color: #000; background-color: rgba(0, 0, 0, 0.9); background-image:url(../cuteslider/images/k-cute3d-nav.png); background-repeat:no-repeat; background-position:100% 0;}
+.br-next{ }
+.br-previous{ right: 51px; background-position:0 0;}
+.br-next:hover,
+.br-previous:hover {background-color:#CD2122;}
+
+.br-slidecontrol{ position:absolute; list-style: none; top:20px; right:20px; z-index:10; }
+
+	.br-slidecontrol ul li{
+		display: block;
+		position:relative;
+		margin:2px;
+		float:left;
+		width:14px;
+		height: 15px;
+		background: url("../cuteslider/images/controls.png") -113px -14px;
+	}
+	
+	.br-slidecontrol ul li .br-control-selected{
+		display: block;
+		width:14px;
+		height: 15px;
+		background: url("../cuteslider/images/controls.png") -92px -14px;
+	}
+
+
+.br-thumb-bottom {
+	left: -36px;
+	position: relative;
+}
+
+.br-thumb-up {
+	left: -36px;
+	top:-143px;
+	position: relative;
+}
+
+	.br-thumb-bottom .br-thumb-frame { 
+		background: url("../cuteslider/images/thumb-frame.png") -0px -7px;
+		width: 92px;
+		height: 95px;
+	}
+	
+	.br-thumb-up .br-thumb-frame { 
+		background: url("../cuteslider/images/thumb-frame.png") -89px 1px;
+		width: 92px;
+		height: 95px;
+	}
+	
+	.br-thumb-bottom .br-thumb-img , .br-thumb-up .br-thumb-img{ 
+		position:absolute;
+		top: 17px;
+		left: 15px;
+		width:60px;
+		height:60px;
+	}
+
+
+.br-slideinfo .br-infocontent{
+	background: url("../cuteslider/images/info-pat.png");
+	font-size: 12px;
+	text-shadow: white 1px 1px;
+	width:100%;
+	height: 100%;
+}
+
+	.br-slideinfo .right , .br-slideinfo .left{
+		width:260px;
+		height: 100%;
+	}
+	
+	.br-slideinfo .info1 div{
+		padding:20px;
+	}
+	
+	.br-slideinfo .info1 .title{
+		font-weight: 700;
+		font-size: 19px;
+	}
+	
+	.br-slideinfo .info1 .text{
+		line-height: 152%;
+
+	}
+
+	.br-slideinfo .info1 .more-btn{
+			cursor: pointer;
+			-moz-box-shadow: inset 0px 1px 0px 0px white;
+			-webkit-box-shadow: inset 0px 1px 0px 0px white;
+			box-shadow: inset 0px 1px 0px 0px white;
+			background: -webkit-gradient( linear, left top, left bottom, color-stop(0.35, #E4E4E4), color-stop(1, #CECECE) );
+			background: -moz-linear-gradient( center top, #E4E4E4 35%, #CECECE 100% );
+			background-color: #CECECE;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+			border: 1px solid #B4B4B4;
+			color: black;
+			font-size: 11px;
+			font-weight: 400;
+			padding: 8px 13px;
+			text-shadow: 1px 1px 0px white;
+			float: right;
+			display: block;
+			position: relative;
+			top: -5%;
+			margin: 0px 10px 18px 10px;
+			text-decoration: none;
+	}
+	
+	.br-slideinfo .info2 .more-btn{
+			cursor: pointer;
+			
+			-moz-box-shadow:	inset 0px 1px 0px 0px #FF7979;
+			-webkit-box-shadow:	inset 0px 1px 0px 0px #FF7979;
+			box-shadow:			inset 0px 1px 0px 0px #FF7979;
+
+			
+			
+			background: -webkit-gradient( linear, left top, left bottom, color-stop(0.35, #DD1C1F), color-stop(1, #CB120F) );
+			background:			-moz-linear-gradient( center top, #DD1C1F 35%, #CB120F 100% );
+			
+			background-color: #DD1C1F;
+			-moz-border-radius:		4px;
+			-webkit-border-radius:	4px;
+			border-radius:			4px;
+
+			border: 1px solid #7C2E2E;
+			color: white;
+			font-size: 12px;
+			font-weight: 400;
+			padding: 4px 13px;
+			text-shadow: 1px 1px 0px black;
+			float: left;
+			display: block;
+			position: relative;
+			left: 65px;
+			top: 42px;
+			text-decoration: none;
+	}
+	
+	.br-slideinfo .info2 .subtitle{
+			display: block;
+			font-weight: 300;
+			letter-spacing: -2px;
+			font-size: 42px;
+			margin-left: 31px;
+			margin-top: -5px;
+	}
+	
+	.br-slideinfo .info2 .title{
+			display: block;
+			font-weight: 700;
+			letter-spacing: -1px;
+			padding-left: 31px;
+			padding-top: 10px;
+			font-size: 19px;
+	}
+	
+	.br-slideinfo .info2 .text{
+			display: block;
+			font-size: 13px;
+			font-weight: 400;
+			padding: 39px 32px;
+			line-height: 127%;
+	}
+	
+/* -------------------------------------
+ * Slider Timer
+ * ------------------------------------*/
+
+.br-circle-timer { position:absolute; top:20px; left:20px; width:28px; height:28px; }
+
+	.br-circle-timer .br-timer-dot {
+		width:11px;
+		height: 13px;
+		background: url("../cuteslider/images/controls.png") -134px -15px;
+		left: 9px !important;
+		top: 8px !important;
+	}
+
+.br-bar-timer{
+	height: 6px;
+	position:absolute;
+	bottom:0px;
+}
+
+	.br-bar-timer .br-timer-glow{
+	 	height: 7px;
+		background: url("../cuteslider/images/timer-glow-dark.png");
+		width: 104px;
+	}
+	 
+	.br-bar-timer .br-timer-bar{
+	 	height: 2px;
+		background-color: black;
+		position: absolute;
+		top: 4px;
+	}
+
+
+/* -------------------------------------
+ * Slider Captions
+ * ------------------------------------*/
+
+.br-captions {
+		font-size:100%;
+	}
+	
+	.caption1 { padding: 0 15px; position: absolute; left: 40px; bottom: 40px; line-height: 40px; color: #E9E9E9; margin: 0; float: left; border-left: 5px solid #CD2122; background: black; background: rgba(0, 0, 0, 0.9); font-size: 17px; text-transform: uppercase; opacity:0; filter:alpha(opacity=0); font-weight:700;}
+	
+	.caption2 { padding: 0 15px; position: absolute; left: 70px; top: 50px; line-height: 40px; color: #E9E9E9; margin: 0; float: left; border-left: 5px solid #CD2122; background: black; background: rgba(0, 0, 0, 0.9); font-size: 17px; text-transform: uppercase; opacity:0; filter:alpha(opacity=0); font-weight:700;}
+	
+	.caption3 { padding: 0 15px; position: absolute; right: 20px; top: 70px; line-height: 40px; color: #E9E9E9; margin: 0; float: left; border-right: 5px solid #CD2122; background: black; background: rgba(0, 0, 0, 0.9); font-size: 17px; text-transform: uppercase; opacity:0; filter:alpha(opacity=0); font-weight:700;}
+	
+	.caption4 { padding: 0 15px; position: absolute; right: 100px; bottom: 20px; line-height: 40px; color: #E9E9E9; margin: 0; float: left; border-right: 5px solid #CD2122; background: black; background: rgba(0, 0, 0, 0.9); font-size: 17px; text-transform: uppercase; opacity:0; filter:alpha(opacity=0); font-weight:700;}
+	
+	
+	@media screen and (max-width: 650px) {
+		.br-captions {font-size:75%}
+	}
+	
+	@media screen and (max-width: 500px) {
+		.br-captions {font-size:60%}
+	}
+	
+	@media screen and (max-width: 400px) {
+		.br-captions {display: none;}
+	}
+	
+/* -------------------------------------
+ * Slider Video
+ * ------------------------------------*/
+
+.br-video {
+	
+}
+
+	.br-video .play-btn{
+		width: 43px;
+		height: 43px;
+		background: url("../cuteslider/images/controls.png") no-repeat -3px -44px;
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -21px 0 0 -21px;
+	}
+	
+	.br-video .close-btn{
+		width: 22px;
+		height: 22px;
+		background: url('../cuteslider/images/controls.png') no-repeat 0px -123px black;
+		cursor: pointer;
+		position: absolute;
+		right: 6px;
+		top: 6px;
+		border: solid 1px #5E5C5C;
+	}
+
+	.br-video .video-cont{
+		background: black;
+		position:absolute;
+		z-index: 2;
+		width:100%;
+		height:100%;
+	}
+
+/* -------------------------------------
+ * Slider Shadow
+ * ------------------------------------*/
+
+.cute-shadow{
+ background: url("../cuteslider/images/shadow.png") no-repeat scroll center;
+bottom: 15px;
+height: 60px;
+position: absolute;
+z-index: 0;
+width: 100%;
+text-align: center;
+}
+
+/* -------------------------------------
+ * Slider Loading
+ * ------------------------------------*/
+
+.br-loading {
+	width: 23px;
+	height: 23px;
+	background: url("../cuteslider/images/controls.png") 150px -94px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -11px;
+	z-index: 101;
+}
+
+	.br-loading .img{
+		width:21px;
+		height:21px;
+		background: url("../cuteslider/images/small-loading.gif") no-repeat center;	
+	}
+
+.br-large-loading {
+	width: 43px;
+	height: 43px;
+	background: url("../cuteslider/images/controls.png") -92px -42px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -21px;
+	z-index: 100;
+}
+
+	.br-large-loading .img{
+		width:40px;
+		height:40px;
+		background: url("../cuteslider/images/large-loading.gif") no-repeat center;	
+	}
+

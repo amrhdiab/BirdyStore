@@ -1,0 +1,34 @@
+/* Main color */
+@media screen and (min-width: 992px) {
+	.main-nav > ul > li > a:before { background-color: #0099cc; }
+}
+.chaser .main-menu li.active>a {background: #0099cc !important;}
+.logo-container .logo-infocard {background-color: #0099cc;}
+.kl-cta-ribbon {background-color: #0099cc;}
+.kl-cta-ribbon .trisvg path { fill: #0099cc;}
+.m_title { color: #0099cc;}
+.how_to_shop .number { background: #0099cc;}
+
+.style3 .action_box_inner,
+.style3 .action_box_inner:before,
+.action_box.style3:before { background-color: #0099cc;}
+.imgboxes_style4 .imgboxes-title:after { background-color: #0099cc;}
+.imgboxes_style4.kl-title_style_bottom .imgboxes-border-helper { border-bottom: solid 5px #0099cc;}
+.imgboxes_style4.kl-title_style_bottom:hover .imgboxes-border-helper { border-bottom: solid 10px #0099cc;}
+.newsletter-signup input[type=submit] { background-color: #0099cc;}
+.recentwork_carousel--2 .recentwork_carousel__title:after { background-color: #0099cc;}
+.btn-fullcolor, .btn-fullcolor:focus { background-color: #0099cc;}
+.btn-fullcolor:hover, 
+.btn-fullcolor.btn-skewed:hover:before, 
+.cart-container .buttons .button.wc-forward:hover { background-color: #0580A9;}
+.recentwork_carousel--2 .recentwork_carousel__cat { background-color: #0099cc;}
+.tcolor { color: #0580A9 !important;}
+.btn-lined.lined-custom { color: #0580A9; border-color: #0580A9;}
+.imgbox-title { float: right; color: #66DA1F; font-weight: 600;}
+.kl-has-overlay .img-intro:hover .overlay { box-shadow: inset 0 -8px 0 0 #0580A9;}
+.ptcarousel .controls > a:hover { background-color: #0580A9;}
+.breadcrumbs li:after { border-left-color: #0580A9;}
+.portfolio-item-details.travel li::before { border: 4px solid transparent; content: ''; height: 0; width: 0; pointer-events: none; display: inline-block;
+border-left-color: #0580A9; margin: 0 5px 0 10px;}
+.tbk-symbol--line_border .tbk__symbol span { background-color: #0580A9;}
+.kl-iconbox__title { color: #0580A9;}

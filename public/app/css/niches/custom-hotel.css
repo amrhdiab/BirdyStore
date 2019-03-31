@@ -1,0 +1,35 @@
+/* Main color */
+@media screen and (min-width: 992px) {
+	.main-nav > ul > li > a:before { background-color: #ffa403;}
+}
+.portfolio-item-details.travel li::before { content: ''; border: 4px solid transparent; height: 0; width: 0; pointer-events: none; display: inline-block;
+border-left-color: #ffa403; margin: 0 5px 0 10px;}
+.breadcrumbs li:after { border-left-color: #ffa403;}
+.chaser .main-menu li.active>a {background: #ffa403 !important;}
+.uh_zn_def_header_style {background-color: #e4b052 !important;}
+.rf__submit { background-color: #ffa403;}
+.rfblock--fields { background-color: #B9872D;}
+.rf__select { background-color: #886525;}
+.rf__select:hover, 
+.rf__select:focus { background-color: #674F23;}
+.rf__submit:hover { background-color: #886525;}
+.kl-cta-ribbon .trisvg path { fill: #ffa403;}
+.kl-cta-ribbon { background: #ffa403;}
+.how_to_shop .number { background: #ffa403;}
+.m_title { color: #ffa403;}
+.logo-container .logo-infocard { background: #ffa403;}
+.btn-md.btn-lined.show-more { width: 300px; margin: 0 auto; margin-top: 30px; color: #1F1818; border-color: #1F1818;}
+.tcolor { color: #ffa403 !important;}
+.grid-ibx__item:hover .grid-ibx__icon { color: #ffa403;}
+.newsletter-signup input[type=submit] { background: #ffa403;}
+.icon-hotel img { max-width: 80px; }
+.btn-fullcolor, .btn-fullcolor:focus { background-color: #ffa403;}
+.btn-fullcolor:hover, 
+.btn-fullcolor.btn-skewed:hover:before, 
+.cart-container .buttons .button.wc-forward:hover {background-color: #B9872D;}
+.hg_separator { margin-top: 60px;}
+.kl-has-overlay .img-intro:hover .overlay { box-shadow: inset 0 -8px 0 0 #ffa403;}
+.ptcarousel .controls > a:hover { background: #ffa403;}
+.kl-iconbox__title { color: #ffa403;}
+.btn-lined.lined-custom { color: #ffa403; border-color: #ffa403;}
+.timeline_box:hover:before { background-color: #ffa403;}

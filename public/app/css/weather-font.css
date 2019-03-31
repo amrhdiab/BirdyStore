@@ -1,0 +1,72 @@
+/*
+  Weather icon font from http://fonts.artill.de/collection/artill-weather-icons
+*/
+
+@font-face {
+    font-family: 'weather';
+    src: url('../fonts/artill_clean_icons-webfont.eot');
+    src: url('../fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/artill_clean_icons-webfont.woff') format('woff'),
+         url('../fonts/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('../fonts/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wt-icon {
+  color: #fff;
+  font-family: weather;
+  font-size: 80px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}
+
+.wt-icon-0:before { content: ":"; }
+.wt-icon-1:before { content: "p"; }
+.wt-icon-2:before { content: "S"; }
+.wt-icon-3:before { content: "Q"; }
+.wt-icon-4:before { content: "S"; }
+.wt-icon-5:before { content: "W"; }
+.wt-icon-6:before { content: "W"; }
+.wt-icon-7:before { content: "W"; }
+.wt-icon-8:before { content: "W"; }
+.wt-icon-9:before { content: "I"; }
+.wt-icon-10:before { content: "W"; }
+.wt-icon-11:before { content: "I"; }
+.wt-icon-12:before { content: "I"; }
+.wt-icon-13:before { content: "I"; }
+.wt-icon-14:before { content: "I"; }
+.wt-icon-15:before { content: "W"; }
+.wt-icon-16:before { content: "I"; }
+.wt-icon-17:before { content: "W"; }
+.wt-icon-18:before { content: "U"; }
+.wt-icon-19:before { content: "Z"; }
+.wt-icon-20:before { content: "Z"; }
+.wt-icon-21:before { content: "Z"; }
+.wt-icon-22:before { content: "Z"; }
+.wt-icon-23:before { content: "Z"; }
+.wt-icon-24:before { content: "E"; }
+.wt-icon-25:before { content: "E"; }
+.wt-icon-26:before { content: "3"; }
+.wt-icon-27:before { content: "a"; }
+.wt-icon-28:before { content: "A"; }
+.wt-icon-29:before { content: "a"; }
+.wt-icon-30:before { content: "A"; }
+.wt-icon-31:before { content: "6"; }
+.wt-icon-32:before { content: "1"; }
+.wt-icon-33:before { content: "6"; }
+.wt-icon-34:before { content: "1"; }
+.wt-icon-35:before { content: "W"; }
+.wt-icon-36:before { content: "1"; }
+.wt-icon-37:before { content: "S"; }
+.wt-icon-38:before { content: "S"; }
+.wt-icon-39:before { content: "S"; }
+.wt-icon-40:before { content: "M"; }
+.wt-icon-41:before { content: "W"; }
+.wt-icon-42:before { content: "I"; }
+.wt-icon-43:before { content: "W"; }
+.wt-icon-44:before { content: "a"; }
+.wt-icon-45:before { content: "S"; }
+.wt-icon-46:before { content: "U"; }
+.wt-icon-47:before { content: "S"; }

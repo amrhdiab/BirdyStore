@@ -1,0 +1,128 @@
+/*! custom.css v1.0 */
+
+/* ==========================================================================
+
+   Custom CSS Stylesheet. This is where you should add your own styles!
+
+   ========================================================================== */
+
+/*
+* Simple style overrides or custom adds
+*/
+
+.some-css-selector {
+    font-size: 13px;
+}
+
+/* ==========================================================================
+   ** Responsive styles custom rules
+   * These rules are ready to be used for either overrides
+   * or just your own custom rules.
+   ========================================================================== */
+
+@media only screen and (min-width: 1921px) {
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+.product {
+    list-style: none;
+}
+
+.account_container {
+    width: 100%;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    opacity: 1;
+}
+
+#centered_table td {
+    text-align: center;
+}
+
+#centered_table th {
+    text-align: center;
+}
+
+#order_products td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#order_products th{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.add_cart_shop:hover {
+    background: #333;
+}
+
+.add_cart_shop {
+    text-transform: uppercase;
+    display: inline-block;
+    background: #CD2122;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1;
+    padding: 6px 10px;
+    white-space: nowrap;
+    margin-bottom: 3px;
+    position: relative;
+    float: right;
+    clear: right;
+    font-weight: 600;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    border: none;
+}
+

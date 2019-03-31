@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6, 
+.tbk__title, 
+.tbk__subtitle, 
+.m_title, 
+p,
+.btn-lined,
+.btn-fullwhite,
+.nlbox--inner,
+.site-header .social-icons.topnav ~ .kl-header-toptext,
+.site-header .header-links-container,
+.site-header .kl-top-header .topnav .languages span,
+.topnav > li > a,
+.how_to_shop,
+.kl-cta-ribbon,
+.tp-caption {font-family: 'Lora', serif !important;}
+
+@media screen and (min-width: 992px) {
+	.main-nav > ul > li > a { font-family: 'Lora', serif;}
+}
+
+
+.fs-xl { font-size: 22px;}

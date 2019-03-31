@@ -1,0 +1,79 @@
+a:hover { color: #34CC99;}
+.top-buttons { margin-top: 18px;}
+.top-buttons .bb-skewed2 { padding: 9px 24px;}
+.top-buttons .bb-skewed2::before { background-color: #34CC99 !important;}
+.top-buttons .bb-skewed2:hover::before { background-color: #32AF85 !important;}
+.top-buttons .bb-skewed2.bb-skewed2_tr::before { background-color: transparent !important; border: solid 1px #fff; -webkit-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;}
+.top-buttons .bb-skewed2.bb-skewed2_tr:hover::before { border-color: rgba(255,255,255,.7); }
+.top-buttons .bb-skewed2.bb-skewed2_tr {margin-right: 10px;}
+.sc__screenshot { margin-top: 15px;}
+.sidebar .widget .widgettitle:after { border-bottom: 1px solid #34CC99;}
+.theHoverBorder:hover { box-shadow: 0 0 0 5px #34CC99 inset;}
+.breadcrumbs li:after { border-left-color: #34CC99;}
+@media screen and (min-width: 992px) {
+	.main-nav > ul > li > a:before { background-color: #34CC99;}
+}
+.chaser .main-menu li.active>a { background-color: #34CC99 !important;}
+.logo-container .logo-infocard { background-color: #34CC99;}
+.kl-cta-ribbon .trisvg path { fill: #34CC99;}
+.kl-cta-ribbon { background-color: #34CC99;}
+.m_title { color: #34CC99;}
+.how_to_shop .number { background-color: #34CC99;}
+.btn-fullcolor { background-color: #34CC99;}
+.btn-fullcolor:hover { background-color: #32AF85;}
+.imgboxes_style4 .imgboxes-title:after { background-color: #34CC99;}
+.newsletter-signup input[type=submit] { background-color: #34CC99;}
+
+.btn-fullcolor.btn-skewed:before { background-color: #34cc99;}
+.btn-fullcolor.btn-skewed:hover:before { background-color: #32AF85;}
+.hg_post_image, .hg_full_image { border-bottom: 5px solid #34CC99;}
+
+
+.col-full { background: #fff; margin-left: -30px; padding-left: 40px; padding-right: 40px; padding-top: 30px; padding-bottom: 62px;}
+@media (min-width: 968px) and (max-width: 1200px) {
+	.col-full { padding-bottom: 66px;}
+}
+
+@media (min-width: 768px) and (max-width: 967px) {
+	.col-full { padding-left: 30px; padding-right: 30px; padding-top: 20px; padding-bottom: 6px;}
+	.furniture-section .tbk__title { font-size: 18px;}
+}
+
+@media (max-width: 768px) {
+	.col-full { margin-right: -30px;}
+}
+
+.el-devimages--center .el-devimages__frame { padding-bottom: 27%;}
+.el-devimages__frame:before { background: #34CC99; box-shadow: -12px 0 0 #34CC99,12px 0 0 #34CC99;}
+.statistic-box__line { border-bottom: dotted 1px #fff;}
+.kl-iconbox__title { color: #000; font-size: 18px;}
+.kl-iconbox__desc { font-size: 14px;}
+@media screen and (min-width: 1200px) {
+	.stage-ibx__point:after { background: rgba(52, 204, 153, 0.41); box-shadow: 0 0 0 3px #34CC99;}
+	.stage-ibx__point:hover:after, .stage-ibx__point.kl-ib-point-active:after { box-shadow: 0 0 0 5px #34CC99, 0 4px 10px #000;}
+}
+
+.btn-fullcolor.btn-skewed.btn-fullcolor2:before { background-color: #ffb400;}
+.btn-fullcolor.btn-skewed.btn-fullcolor2:hover:before { background-color: #000;}
+.imgboxes_style4 .imgboxes-wrapper { margin-bottom: 5px;}
+.bb-desc { font-size: 14px; color: #888;}
+.bs-title { font-size: 30px; line-height: 34px;}
+.tbk__text.bs-desc { font-size: 16px; color: #888;}
+.btn-skewed.bb-skewed2:before { transform: none; background-color: #339a99;}
+
+.media-container__link--style-borderanim2 .media-container__text { font-weight: 400;}
+.media-container .kl-title-block .btn-lined { background-color: transparent; color: #fff; padding: 15px 40px; font-size: 19px; font-weight: 400; 
+margin-top: 30px;}
+.media-container .kl-title-block .btn-lined:hover { background-color: transparent; color: #fff; border-color: #fff; border-radius: 0;}
+.static-content__infopop .sc-infopop__btn { color: #32AF85;}
+.services_box--modern .services_box__icon { box-shadow: inset 0 0 0 2px #34CC99;}
+.services_box--modern .services_box__fonticon { color: #34CC99;}
+.services_box--modern:hover .services_box__icon { box-shadow: inset 0 0 0 40px #34CC99;}
+.services_box--modern .services_box__list li:before { box-shadow: 0 0 0 2px #34CC99;}
+.services_box--boxed .services_box__fonticon { color: #34CC99;}
+.services_box--boxed .services_box__list li { color: #34CC99;}
+.services_box--modern .services_box__list li:hover:before { box-shadow: 0 0 0 3px #318a6c;}
+
+.circlehover:before,
+.circlehover { background-color: #34CC99;}

@@ -1,0 +1,15 @@
+/*!
+ * jQuery Loupe
+ * http://www.userdot.net/#!/jquery
+ *
+ * Copyright 2011, UserDot www.userdot.net
+ * Licensed under the GPL Version 3 license.
+ * Version 1.0.0
+ *
+ */
+.sc__loupe {position: absolute; display: none; border: 1px solid #000; background-color: transparent; z-index: 1000; margin: 0px; padding: 0px; background-repeat: no-repeat; background-position: center; }
+.overlay {position: absolute; display: none; z-index: 999; background-color: #000; }
+.overlay_img {background: url("../images/drop.png"); }
+.overlay_white {background-color: #fff; }
+.shadow { box-shadow: 5px 5px 10px #000; }
+.glossy {display: block; margin: 0px; background: -moz-linear-gradient(top, rgba(255,255,255,.6) 0%, rgba(255,255,255,0) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.6)), color-stop(100%,rgba(255,255,255,0))); }

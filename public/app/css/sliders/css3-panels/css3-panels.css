@@ -1,0 +1,323 @@
+.kl-slideshow-css3panels {/*overflow: hidden;*/ position: relative;}
+
+.css3panels-container {overflow:hidden; position:relative; z-index:0; min-height:150px; margin-left: -62px; margin-right: -62px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+}
+
+/* Panels */
+.css3panel {float:left;  position: relative; z-index: 0; min-height:150px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    /* Chrome Hacks */
+    -webkit-backface-visibility:hidden;
+}
+.css3panel:hover {z-index: 1;}
+.css3panel:hover .css3panel-inner {box-shadow: 0 0 0 3px #FFF, 0 0 50px 20px rgba(0, 0, 0, 0.5);}
+
+.css3panels--resize .css3panel {
+    will-change: flex-grow;
+    -webkit-transition: -webkit-box-flex .2s ease-out;
+    -webkit-transition: -webkit-flex-grow .2s ease-out;
+            transition: -webkit-box-flex .2s ease-out;
+            transition: -ms-flex-positive .2s ease-out;
+            transition: flex-grow .2s ease-out;
+}
+.css3panels--resize .css3panel-inner {
+    will-change: box-shadow;
+    -webkit-transition: box-shadow .2s ease-out;
+    -webkit-transition: box-shadow .2s ease-out;
+            transition: box-shadow .2s ease-out;
+}
+.css3panels--resize .css3panel:hover {
+    -webkit-box-flex:1.3;
+    -webkit-flex-grow:1.3;
+        -ms-flex-positive:1.3;
+            flex-grow:1.3;
+}
+
+/* Panel width sizes */
+.no-flexbox .css3panels-container[data-panels="1"] .css3panel {width: 100%; float: none;}
+.no-flexbox .css3panels-container[data-panels="2"] .css3panel {width: 50%;}
+.no-flexbox .css3panels-container[data-panels="3"] .css3panel {width: 33.3333%;}
+.no-flexbox .css3panels-container[data-panels="4"] .css3panel {width: 25%;}
+.no-flexbox .css3panels-container[data-panels="5"] .css3panel {width: 20%;}
+.no-flexbox .css3panels-container[data-panels="6"] .css3panel {width: 16.6666%;}
+/* Hover resize */
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="2"]:hover .css3panel {width: 40%; }
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="2"]:hover .css3panel:hover {width: 60%;}
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="3"]:hover .css3panel {width: 30%;}
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="3"]:hover .css3panel:hover {width: 40%;}
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="4"]:hover .css3panel {width: 22%; }
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="4"]:hover .css3panel:hover {width: 34%;}
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="5"]:hover .css3panel {width: 16%;}
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="5"]:hover .css3panel:hover {width: 36%;}
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="6"]:hover .css3panel {width: 15%;}
+.no-flexbox .css3panels-container.css3panels--resize[data-panels="6"]:hover .css3panel:hover {width: 25%;}
+
+/* Inner panel */
+.css3panel-inner { position:relative; -webkit-transform: skewX(-10deg); -ms-transform: skewX(-10deg); transform: skewX(-10deg); -webkit-backface-visibility:hidden; overflow: hidden; -webkit-transition: box-shadow .2s ease-out; transition: box-shadow .2s ease-out; box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);}
+
+/* Image */
+ .css3panel-mainimage-wrapper {position: relative; margin-left: -60px; margin-right: -60px; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform: skewX(10deg); -ms-transform: skewX(10deg); transform: skewX(10deg); -webkit-backface-visibility: hidden; }
+.css3panel-mainimage {position:absolute; top:-2px; left:-2px; right:-2px; bottom:-2px; background-position: 50% 50%; background-repeat: no-repeat; background-size:cover; -webkit-backface-visibility:hidden; -webkit-transition: .2s ease-out; transition: .2s ease-out; }
+ /* Image overlay */
+.css3p-overlay {position:absolute; left:0; top:0; right:0; bottom:0; -webkit-transition:opacity .15s ease-out; transition:opacity .15s ease-out;}
+.css3panel:hover .css3p-overlay {opacity:0; }
+.css3p-overlay--gradient { opacity: 0.5; top: 50%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); }
+/* Image animations */
+.css3panel-mainimage.anim--grayscale {
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out;
+}
+.css3panel:hover .css3panel-mainimage.anim--grayscale {
+    opacity:0;
+}
+.css3panel-mainimage.anim--blur {
+    -webkit-filter:blur(9px);
+    filter:blur(9px);
+    -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out;
+}
+.css3panel:hover .css3panel-mainimage.anim--blur {
+    opacity:0;
+}
+.css3panel-mainimage.anim--grayscale.anim--blur {
+    -webkit-filter:grayscale(100%) blur(9px);
+    filter:grayscale(100%) blur(9px);
+    -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out;
+}
+.css3panel:hover .css3panel-mainimage.anim--grayscale.anim--blur {
+    opacity:0;
+}
+
+.css3panel-caption {  position: absolute; bottom: 90px; color: #FFFFFF; z-index: 1; width: 100%;   padding: 0 50px; text-align: right;}
+.css3panel:first-child .css3panel-caption {padding-left: 80px;}
+.css3panel:last-child .css3panel-caption {padding-right:80px;}
+.css3panel-caption.css3caption--middle {bottom:auto; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); }
+.css3panel-title { font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif; }
+/* Fading in Caption */
+.cssp-capt-fadein .css3panel-title,
+.cssp-capt-fadein .css3panel-text,
+.cssp-capt-fadein .css3panel-btn-area {opacity:0; visibility: hidden; -webkit-transition:opacity .15s ease-out, visibility .15s ease-out; transition:opacity .15s ease-out, visibility .15s ease-out;}
+.cssp-capt-fadein .css3panel:hover .css3panel-title,
+.cssp-capt-fadein .css3panel:hover .css3panel-text,
+.cssp-capt-fadein .css3panel:hover .css3panel-btn-area {opacity:1; visibility: visible;}
+/* Fading Out Caption */
+.cssp-capt-fadeout .css3panel-title,
+.cssp-capt-fadeout .css3panel-text,
+.cssp-capt-fadeout .css3panel-btn-area {opacity:1; visibility: visible; -webkit-transition:opacity .15s ease-out, visibility .15s ease-out; transition:opacity .15s ease-out, visibility .15s ease-out;}
+.cssp-capt-fadeout .css3panel:hover .css3panel-title,
+.cssp-capt-fadeout .css3panel:hover .css3panel-text {opacity:0; visibility: hidden;}
+.cssp-capt-fadeout .css3panel:hover .css3panel-btn-area {}
+/* Slide in Caption */
+.cssp-capt-slidein .css3panel-title,
+.cssp-capt-slidein .css3panel-text,
+.cssp-capt-slidein .css3panel-btn-area {opacity:0; visibility: hidden; -webkit-transform:translateX(200px); -ms-transform:translateX(200px); transform:translateX(200px); -webkit-transition:opacity .15s ease-out, visibility .15s ease-out, -webkit-transform .15s ease-out; transition:opacity .15s ease-out, visibility .15s ease-out, transform .15s ease-out;}
+.cssp-capt-slidein .css3panel:hover .css3panel-title,
+.cssp-capt-slidein .css3panel:hover .css3panel-text,
+.cssp-capt-slidein .css3panel:hover .css3panel-btn-area {opacity:1; visibility: visible; -webkit-transform:translateX(0); -ms-transform:translateX(0); transform:translateX(0); }
+/* Slide Out Caption */
+.cssp-capt-slideout .css3panel-title,
+.cssp-capt-slideout .css3panel-text,
+.cssp-capt-slideout .css3panel-btn-area {opacity:1; visibility: visible; -webkit-transform:translateX(0); -ms-transform:translateX(0); transform:translateX(0); -webkit-transition:opacity .15s ease-out, visibility .15s ease-out, -webkit-transform .15s ease-out; transition:opacity .15s ease-out, visibility .15s ease-out, transform .15s ease-out;}
+.cssp-capt-slideout .css3panel:hover .css3panel-title,
+.cssp-capt-slideout .css3panel:hover .css3panel-text {opacity:0; visibility: hidden; -webkit-transform:translateX(200px); -ms-transform:translateX(200px); transform:translateX(200px); }
+.cssp-capt-slideout .css3panel:hover .css3panel-btn-area {-webkit-transform:translateY(40px) translateX(-10px); -ms-transform:translateY(40px) translateX(-10px); transform:translateY(40px) translateX(-10px);
+-webkit-transition-duration:.3s !important;transition-duration:.3s !important;
+-webkit-transition-delay:.1s !important;transition-delay:.1s !important;}
+.cssp-capt-slideout .css3panel:hover .css3p-overlay {opacity:0; }
+/* Delay individually */
+.cssp-capt-animated .css3panel-title {-webkit-transition-delay:.1s;transition-delay:.1s;}
+.cssp-capt-animated .css3panel-text {-webkit-transition-delay:.2s;transition-delay:.2s;}
+.cssp-capt-animated .css3panel-btn-area {-webkit-transition-delay:0s;transition-delay:0s;}
+.cssp-capt-animated .css3panel:hover .css3panel-btn-area {-webkit-transition-delay:.3s;transition-delay:.3s;}
+.cssp-capt-animated .css3p-overlay {-webkit-transition-delay:.1s;transition-delay:.1s;}
+
+/* Css Title */
+.css3panel-title { position: relative; font-size: 28px; line-height: 1.3; font-weight: 600; color: #FFF; float: right; margin:0;}
+.css3panel-title.title-size-bigger {font-size: 70px; line-height: 1.1; text-shadow: 1px 1px 50px rgba(0, 0, 0, 0.4); letter-spacing: -2px;}
+.css3panel:last-child .css3panel-title {margin-right: 10px;}
+/* Panel text*/
+.css3panel-text { font-size: 16px; color:#fff; font-weight: 300; margin-top:20px; max-width: 380px; margin-right: 20px; line-height: 1.6; clear: both; float: right;}
+/* Dark colors */
+.cp-theme--dark .css3panel-title:not(.captiontitle--wbg):not(.captiontitle--dbg),
+.cp-theme--dark .css3panel-text {color:#252525;}
+/* Title presets */
+.captiontitle--wbg {/* color:#181818; */}
+.captiontitle--wbg,
+.captiontitle--dbg {padding: 13px 0px 13px 45px;}
+.captiontitle--wbg:before,
+.captiontitle--dbg:before {content: ""; position: absolute; height: 100%; border-radius: 4px; padding-right: 35px; display: block; right: -35px; bottom: 0; left: 0; top: 0; z-index: -1;
+-webkit-transform-style: preserve-3d; transform-style: preserve-3d;
+-webkit-transform: skew(-10deg) translate3d(0,0,0); -ms-transform: skew(-10deg) translate3d(0,0,0); transform: skew(-12deg) translate3d(0,0,0);
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 80%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(80%,rgba(0,0,0,0.45)));
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 80%);
+background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 80%);
+background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 80%);
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 80%);
+}
+.captiontitle--wbg:before {background: rgba(255,255,255,0.9);
+background: -moz-linear-gradient(left,  rgba(255,255,255,0.25) 40%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(40%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0)));
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0.25) 40%,rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(left,  rgba(255,255,255,0.25) 40%,rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(left,  rgba(255,255,255,0.25) 40%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to right,  rgba(255,255,255,0.25) 40%,rgba(255,255,255,0) 100%);}
+
+/* Btn area */
+.css3panel-btn-area {clear:both; float:right; margin-top:30px; margin-right: 20px;}
+.css3panel-btn-area .btn {margin-left:20px;margin-bottom: 10px;}
+
+@media (max-width: 1440px) {
+    .css3panel-caption {padding-left:50px;}
+
+    .css3panel:first-child,
+    .css3panel:last-child {
+        -webkit-box-flex:1.1;
+        -webkit-flex-grow:1.1;
+            -ms-flex-positive:1.1;
+                flex-grow:1.1;
+    }
+
+    .css3panel .css3panel-title {font-size: 18px; margin-right: 30px;}
+    .css3panel .css3panel-text {font-size: 13px; margin-right: 10px;}
+    .css3panel .css3panel-btn-area {margin-right:10px;}
+    .css3panel .css3panel-btn-area .btn {margin-bottom: 10px; display: block}
+
+    .css3panel .css3panel-title.title-size-bigger {font-size: 30px;}
+}
+
+/* Fixes CSS3 Panels */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .css3panel .css3panel-caption {padding-right:30px;}
+    .css3panels-container.css3panels--resize:hover .css3panel .css3panel-caption {width: 130%; margin-left: -30%;}
+    .css3panels-container.css3panels--resize:hover .css3panel:hover .css3panel-caption {/*width: 100%; margin-left: 0%;*/}
+    .css3panel .css3panel-title ,
+    .css3panel .css3panel-title.title-size-bigger {font-size: 18px; margin-right: 30px;}
+    .css3panel .css3panel-text {font-size: 13px; margin-right: 30px;}
+    .css3panel .css3panel-btn-area {margin-right:35px;}
+    .css3panel .css3panel-btn-area .btn {margin-bottom: 10px;}
+    .css3panel:first-child {
+        -webkit-box-flex:1.3;
+        -webkit-flex-grow:1.3;
+            -ms-flex-positive:1.3;
+                flex-grow:1.3;
+    }
+    .css3panels--resize .css3panel:hover {
+        -webkit-box-flex:2;
+        -webkit-flex-grow:2;
+            -ms-flex-positive:2;
+                flex-grow:2;
+    }
+    .css3panel:first-child .css3panel-caption {padding-left:70px;}
+    .css3panel:last-child .css3panel-caption {padding-right:60px;}
+
+    .css3panel-btn-area .btn {font-size:12px; margin-left: 0;}
+    .css3panel-btn-area .btn:last-child {margin-left: 10px; }
+
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .css3panel .css3panel-caption {padding-right: 25px;}
+    .css3panels-container.css3panels--resize:hover .css3panel .css3panel-caption {/*width: 130%; margin-left: -30%;*/}
+    .css3panels-container.css3panels--resize:hover .css3panel:hover .css3panel-caption {/*width: 100%; margin-left: 0%;*/}
+    .css3panel .css3panel-title,
+    .css3panel .css3panel-title.title-size-bigger {font-size: 16px; margin-right:20px;}
+    .css3panel .css3panel-text {font-size: 13px; margin-right: 30px; display: none;}
+    .css3panel .css3panel-btn-area {margin-right:35px; margin-top:50px;}
+    .css3panel .css3panel-btn-area .btn {margin-bottom: 10px;}
+    .css3panel:first-child {flex-grow:1.3;}
+    .css3panels--resize .css3panel:hover {
+        -webkit-box-flex:2.2;
+        -webkit-flex-grow:2.2;
+            -ms-flex-positive:2.2;
+                flex-grow:2.2;
+    }
+    .css3panel:first-child .css3panel-caption {padding-left:50px;}
+    .css3panel:last-child .css3panel-caption {padding-right:50px;}
+    .css3panel:last-child .css3panel-title { margin-right:30px;}
+
+    .css3panel-btn-area .btn {font-size:12px; margin-left: 0; }
+    .css3panel-btn-area .btn:last-child {margin-left: 10px; }
+}
+
+@media (max-width: 767px) {
+
+    .css3panels-container {
+        margin-left: 0; margin-right: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+
+    .css3panel {
+        float:left; overflow:hidden; position: relative; z-index: 0; box-shadow: 0 0 0 3px #fff;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+
+    }
+   .zn_pb_wrapper .kl-slideshow-css3panels:first-child .css3panel:first-child {padding-top:150px;padding-bottom: 0;box-sizing: content-box;width: 100%;}
+   .zn_pb_wrapper .kl-slideshow-css3panels:first-child .css3panel:first-child .css3panel-inner {top: 0;}
+   .zn_pb_wrapper .kl-slideshow-css3panels:first-child .css3panel:first-child .css3panel-caption {margin-top:150px;}
+
+   .css3panel:first-child,
+   .css3panel:last-child {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+   .css3panels--resize .css3panel:first-child:hover,
+   .css3panels--resize .css3panel:last-child:hover,
+   .css3panels--resize .css3panel:hover {
+        -webkit-box-flex: 1.5;
+        -webkit-flex-grow: 1.5;
+            -ms-flex-positive: 1.5;
+                flex-grow: 1.5;
+    }
+   .css3panel-inner {
+        position:absolute; margin-left: 0; margin-right: 0; min-height:150px;
+        -webkit-transform:  skewX(0); -ms-transform:  skewX(0); transform:  skewX(0);
+        width: 100%; height: 100% !important;
+}
+    .css3panel-mainimage-wrapper {-webkit-transform:  skewX(0); -ms-transform:  skewX(0); transform:  skewX(0);height: 100% !important;}
+    .css3panel-caption {padding-left: 20px; padding-right: 20px; bottom: auto; top: 20px; }
+    .css3panel-title,
+    .css3panel .css3panel-title.title-size-bigger {font-size: 18px; max-width: 70%;}
+    .captiontitle--wbg,
+    .captiontitle--dbg {padding: 10px 0 10px 25px; }
+    .css3panel-text {font-size: 14px; max-width: 70%; margin-right: 0;}
+    .css3panel-btn-area {clear: none; float: left; max-width: 30%; position: absolute; top: 0; left: 0; text-align: left; margin-top: 5px; margin-right: 0; }
+    .css3panel-btn-area .btn:first-child { margin-bottom:15px; }
+}
+
+@media (max-width: 480px) {
+    .css3panel:first-child {padding-top:0;padding-bottom: 0;box-sizing: border-box;width: 100%;}
+    .css3panel:first-child .css3panel-inner {top: auto;}
+    .css3panel:first-child .css3panel-caption {margin-top:0;}
+    .css3panel-text {display: none;}
+    .css3panel-btn-area {clear: right; float: right; max-width: 100%; position: relative; top: 0; left: 0; text-align: left; margin-right: 0; margin-top:20px;}
+    .css3panel-btn-area .btn:first-child { /* margin-bottom:0; */ }
+}

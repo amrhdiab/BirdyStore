@@ -1,0 +1,40 @@
+/* Main color */
+a:hover { color: #fd4b0c;}
+.site-header.style2 .topnav.social-icons { top: 0;}
+@media screen and (min-width: 992px) {
+	.main-nav > ul > li > a:before { background-color: #fd4b0c; }
+	.chaser .main-menu { margin-top: 61px;}
+}
+.site-header.style2 .kl-main-header { border-bottom: 3px solid #fd4b0c;}
+.tcolor { color: #fd4b0c !important;}
+.chaser .main-menu li.active>a { background: #fd4b0c !important;}
+.kl-cta-ribbon { background: #fd4b0c;}
+.kl-cta-ribbon .trisvg path {fill: #fd4b0c;}
+.hover-box:hover { background-color: #fd4b0c !important;}
+.site-header .kl-header-toptext a { color: #fd4b0c;}
+.custom-position2 { background-color: rgba(253, 75, 12, 0.7) !important;}
+.circle-text-box .wpk-circle-title { color: #fd4b0c;}
+.circle-text-box .wpk-circle-span:after { background-color: #fd4b0c;}
+.circle-text-box.style2 .wpk-circle-span::before { background: #fd4b0c;}
+.btn-lined.lined-custom { color: #fd4b0c; border-color: #fd4b0c;}
+.gobox.ok:before, 
+.gobox.ok:after, 
+.gobox.ok { background-color: #fd4b0c;}
+.m_title { color: #fd4b0c;}
+.recentwork_carousel_v3 .btn::before { background-color: #fd4b0c;}
+.recentwork_carousel_v3 .recentwork_carousel__cat { background-color: #fd4b0c;}
+.newsletter-signup input[type=submit] { background: #fd4b0c;}
+.logo-container .logo-infocard { background: #fd4b0c;}
+.static-content__infopop .sc-infopop__btn { color: #fd4b0c; }
+.services_box--modern .services_box__fonticon { color: #fd4b0c;}
+.services_box--modern .services_box__icon {box-shadow: inset 0 0 0 2px #fd4b0c;}
+.services_box--modern:hover .services_box__icon { box-shadow: inset 0 0 0 40px #fd4b0c;}
+.services_box--modern .services_box__list li:before { box-shadow: 0 0 0 2px #fd4b0c;}
+.services_box--modern .services_box__list li:hover:before { box-shadow: 0 0 0 3px #fd4b0c;}
+.services_box--boxed .services_box__fonticon,
+.services_box--boxed .services_box__list li { color: #fd4b0c;}
+.circlehover:before,
+.circlehover { background: #fd4b0c;}
+.how_to_shop .number { background-color: #fd4b0c; }
+.hg-portfolio-sortable #portfolio-nav li a:hover, 
+.hg-portfolio-sortable #portfolio-nav li.current a { background: #fd4b0c;}

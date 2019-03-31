@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="615px" height="315px" viewBox="0 0 615 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>macbook-air</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="macbook-air" sketch:type="MSLayerGroup" transform="translate(-1.000000, 1.000000)">
+            <path d="M308.499,298.822 C478.329,298.822 616.003,302.22 616.003,306.41 C616.003,310.601 478.329,313.998 308.499,313.998 C138.67,313.998 0.995,310.601 0.995,306.41 C0.995,302.22 138.67,298.822 308.499,298.822 L308.499,298.822 Z" id="path-1" opacity="0.04" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <g id="device" transform="translate(29.000000, 0.000000)" stroke="#FFFFFF" stroke-width="2" sketch:type="MSShapeGroup">
+                <path d="M279.499,295.028 L57.413,295.028 L57.413,16.17 C57.413,7.789 64.212,0.994 72.598,0.994 L279.499,0.994 L486.4,0.994 C494.786,0.994 501.585,7.789 501.585,16.17 L501.585,295.028 L279.499,295.028 Z M76.395,19.964 L482.603,19.964 L482.603,276.058 L76.395,276.058 L76.395,19.964 Z" id="path-2" fill="#D4D7DB"></path>
+                <path d="M530.058,306.41 L279.499,306.41 L28.941,306.41 C13.854,306.41 1.516,301.384 0.538,295.028 L279.499,295.028 L558.46,295.028 C557.482,301.384 545.144,306.41 530.058,306.41 L530.058,306.41 Z" id="path-3" fill="#C1C3C8"></path>
+                <path d="M318.738,295.028 C317.273,298.376 313.938,300.719 310.048,300.719 L279.677,300.719 L279.499,300.719 L249.128,300.719 C245.238,300.719 241.903,298.376 240.438,295.028 L318.738,295.028 L318.738,295.028 Z" stroke-width="1" id="path-4" fill="#979AA1"></path>
+                <circle id="circle-1" fill="#A5ADBD" cx="280" cy="12" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
