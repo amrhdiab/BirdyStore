@@ -10,9 +10,6 @@ Built on laravel 5.5
 ## Technologies Used
 - Javascript.
 - JQuery.
-- Ajax.
-- HTML.
-- CSS.
 - Bootstrap.
 - PHP.
 
@@ -60,10 +57,6 @@ Built on laravel 5.5
 - Reviews displayed using Datatables with (View, Change status, Delete).
 - User messages.
 - Website settings (contact details - info - about - icons).
-
-## Notes
-- The application is built 80% on ajax.
-- The application offers more features than the listed above.
 
 ## Installation Notes
 - The application got ready to use  migrates and "Seeders", just run a migration then a database seed to get real life products and data.
